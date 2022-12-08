@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="Prezziario" class="org.example.Prezziario">
+        <property name="prezziario">
+            <map>
+                <entry key="Margherita" value="13" />
+                <entry key="Marinara" value="15" />
+                <entry key="Quattro_Stagioni" value="16"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <bean id="Scontrino" class="org.example.Scontrino">
+        <property name="consegna" value="4.0"></property>
+    </bean>
+    
+    
+</beans>
+
+
